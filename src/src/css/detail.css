@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  display: flex; }
+
+.wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column; }
+
+.wrap .header {
+  width: 100%;
+  height: 44px;
+  background: #000; }
+
+.wrap .header span {
+  float: left;
+  color: #fff;
+  margin-left: 150px;
+  line-height: 44px; }
+
+.wrap .header button {
+  float: right;
+  margin-top: 10px;
+  margin-right: 10px; }
+
+.wrap .section .cont {
+  width: 98%;
+  height: 60px;
+  border: 1px solid #ccc; }

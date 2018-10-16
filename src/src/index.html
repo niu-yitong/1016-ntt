@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- 头部 -->
+        <header class='header'>
+            <span>发表帖子</span>
+            <button id='send'>保存</button>
+        </header>
+        <!-- 内容 -->
+        <section class='section'>
+            <!-- 标题 -->
+            <div class="titbox">
+                <input type="text" class='tit' id='tit' placeholder="标题(60字以内)">
+            </div>
+            <!-- 内容 -->
+            <textarea class='content' id='cont'></textarea>
+        </section>
+    </div>
+</body>
+<script src='./js/libs/require.js'></script>
+<script>
+    require(["./js/main.js"], function() {
+        require(["index"])
+    })
+</script>
+
+</html>

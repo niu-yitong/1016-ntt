@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/detail.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- 头部 -->
+        <header class='header'>
+            <span>发表帖子</span>
+            <button id="add">发帖</button>
+        </header>
+        <!-- 内容 -->
+        <section class='section' id='section'>
+
+        </section>
+        <script type='text/x-handlebars-template' id='tpl'>
+            {{#each this}}
+            <div class="cont">
+                <span>{{tit}}</span>
+                <p>{{content}}</p>
+            </div>
+            {{/each}}
+        </script>
+    </div>
+</body>
+<script src="../js/libs/require.js"></script>
+<script>
+    require(["../js/main.js"], function() {
+        require(['detail'])
+    })
+</script>
+
+</html>
